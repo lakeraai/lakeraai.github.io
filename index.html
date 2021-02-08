@@ -35,26 +35,47 @@
 
 	<style type="text/css">
 		
-	body {
-		font-family: 'Montserrat', sans-serif;
-	}
+		body {
+			font-family: 'Montserrat', sans-serif;
+			background-color: #fefefe;
+			color: #5c5c5c;
+		}
+
+		.logo {
+			height: auto;
+			width: 140px;
+			max-width: 70%;
+			margin: 40px;
+		}
+
+		.btn-primary {
+			background-color: #0081b3;
+			border: none;
+			margin: 24px;
+			color: #fefefe;
+		}
+
+		.btn-primary:hover, .btn-primary:active, .btn-primary:visited, .btn-primary:focus {
+			background-color: #00a99d;
+		}
 
 	</style>
 
 </head>
 
-<body class="d-flex h-100 text-center text-white bg-dark">
+<body class="d-flex h-100 text-center">
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
   <header class="mb-auto">
   </header>
 
   <main class="px-3">
-    <h2>Mission-critical AI for healthcare, finance, and transportation</h2>
-	<p class="lead">info@lakera.ai</p></h1>
+  	<img class="logo" src="img/logo.png">
+    <h2>Powering mission-critical AI</h2>
+	<a class="btn btn-primary" href="mailto:info@lakera.ai" onlick="javascript:gtag('event', 'request_info', {'event_category' : 'engagement', 'event_label' : 'method'});">Request Information</a>
   </main>
 
-  <footer class="mt-auto text-white-50">
-    <p>Copyright © 2021 - Lakera AI</p>
+  <footer class="mt-auto">
+    <p>Copyright © 2021 - Lakera AI AG</p>
   </footer>
 </div>
 </body>
